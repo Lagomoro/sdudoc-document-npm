@@ -87,6 +87,13 @@ Element.prototype.saveJson = function(){
     json_object._sha512 = this._sha512;
     return json_object;
 };
+Element.prototype.exportJson = function(){
+    let json_object = {};
+    json_object._tag    = this._tag;
+    json_object._id     = this._id;
+    json_object._sha512 = this._sha512;
+    return json_object;
+};
 // ================================================================================
 
 // ================================================================================
