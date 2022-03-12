@@ -37,7 +37,7 @@ ElementPool.prototype._elements = {};
 // * Initialize
 // --------------------------------------------------------------------------------
 ElementPool.prototype.initialize = function(){
-    this.clear();
+    this._elements = {};
 };
 // --------------------------------------------------------------------------------
 ElementPool.prototype.clear = function(){

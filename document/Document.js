@@ -63,12 +63,14 @@ Object.defineProperty(Document.prototype, 'repository', {
 // * Initialize
 // --------------------------------------------------------------------------------
 Document.prototype.initialize = function(){
-    this.clear();
-};
-Document.prototype.clear = function(){
     this._header = {};
     this._element_pool = new ElementPool();
     this._repository = new Repository();
+};
+Document.prototype.clear = function(){
+    this._header = {};
+    this._element_pool.clear();
+    this._repository.clear();
 };
 // --------------------------------------------------------------------------------
 // * Version control
