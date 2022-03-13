@@ -30,24 +30,24 @@ ElementFactory.SAPARATOR = '_';
 // --------------------------------------------------------------------------------
 // * Property
 // --------------------------------------------------------------------------------
-ElementFactory._interpreter = {};
+ElementFactory._elements = {};
 // --------------------------------------------------------------------------------
 // * Function
 // --------------------------------------------------------------------------------
-ElementFactory.addInterpreter = function(element){
-    this._interpreter[element.TAG] = element;
+ElementFactory.addElement = function(element){
+    this._elements[element.TAG] = element;
 };
 // --------------------------------------------------------------------------------
 // * New Element
 // --------------------------------------------------------------------------------
 ElementFactory.newElement = function(username, tag){
-    return this._interpreter[tag].newElement(arguments);
+    return this._elements[tag].newElement(arguments);
 };
 // --------------------------------------------------------------------------------
 // * Load Element
 // --------------------------------------------------------------------------------
 ElementFactory.loadElement = function(json_object){
-    let element = this._interpreter[json_object.tag].newElement();
+    let element = this._elements[json_object.tag].newElement();
     element.loadJson(json_object);
     return element;
 };
