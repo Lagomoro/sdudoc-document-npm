@@ -1,7 +1,7 @@
 'use strict'
 
 // ================================================================================
-// * Element <SDUDOC Document>
+// * ElementFactory <SDUDOC Document>
 // --------------------------------------------------------------------------------
 //   Designer: Lagomoro <Yongrui Wang>
 //   License: MIT
