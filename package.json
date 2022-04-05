@@ -1,6 +1,6 @@
 {
   "name": "sdudoc-document",
-  "version": "0.0.1",
+  "version": "0.0.1-beta",
   "description": "SDUDOC Document parser for .sjs",
   "main": "index.js",
   "scripts": {
